@@ -11,6 +11,10 @@ body {
 
 [class*='live_overlay_message'] {
   background-color: rgba(0, 0, 0, .8);
+  animation-name: disappear;
+  animation-delay: 10s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
 
 [class*='live_chatting_message_text'] {
@@ -21,9 +25,18 @@ body {
 [class*='live_chatting_username_nickname'] {}
 
 [class*='live_chatting_username_container'] {
-    margin-right: 6px;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-    gap: 8px;
+  margin-right: 6px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
