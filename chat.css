@@ -1,0 +1,29 @@
+body {
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+[class*='live_chatting_message_wrapper'] {
+  display: flex;
+  flex-direction: column;
+}
+
+[class*='live_overlay_message'] {
+  background-color: rgba(0, 0, 0, .8);
+}
+
+[class*='live_chatting_message_text'] {
+  font-size: 24px;
+  color: #FFFFFF !important;
+}
+
+[class*='live_chatting_username_nickname'] {}
+
+[class*='live_chatting_username_container'] {
+    margin-right: 6px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 8px;
+}
